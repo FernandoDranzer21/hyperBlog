@@ -38,3 +38,5 @@ git pull {nombreRemoto} {nombreDeLaRama}
 * Puede pasar el escenario que has creado un repo en GITHUB con un archivo README.MD pero al momento de traer los cambios salga un mensaje que no existe merge y es correcto entonces en esos caso usamos este comando
 
 git pull {nombreRemoto} {nombreDeLaRama} --allow-unrelated-histories
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
