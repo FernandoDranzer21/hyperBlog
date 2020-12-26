@@ -40,3 +40,19 @@ git pull {nombreRemoto} {nombreDeLaRama}
 git pull {nombreRemoto} {nombreDeLaRama} --allow-unrelated-histories
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+git log --all = Ves todos los commits
+
+$ git log --all --graph --decorate --oneline
+
+alias arbolito="git log --all --graph --decorate --oneline"
+
+
+
+ git tag -a v0.1 -m "Resultado de la primera clase del curso" {idcommit} = Creamos un tag
+
+history = para ver los comando que he ejecutado
+
+agregamos el tag al GITHUB
+
+git push origin --tags
+
