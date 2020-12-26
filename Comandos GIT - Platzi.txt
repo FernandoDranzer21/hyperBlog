@@ -1,0 +1,40 @@
+git config --global user.name="Fernando Gordillo"
+git config --global user.email="fernando@globant.com"
+
+git rm --cached {nombreArchivo}  = Del stage lo pone en carpeta
+
+
+git log = Ver logs de los commits
+
+git show {nombreArchivo} = Saber los cambios del archivo
+
+git diff {idCommit 1} {idCommit 2} = Me siver para comparar Commit osea cambios que se han realizado
+
+git reset {idCommit} --hard = Volvemos a una version reciente y por ende se elimina el commit tener mucho cuidado
+
+git diff = Por ejemplo si hiciste git add . y despues volviste a modificar con ese comando te dice la diferencia entre tu area de trabajo y tu staging 
+
+git branch {nombreDeUnaRama} = crea la rama
+git checkout {nombredeLaRama} = Va a la rama que quiero 
+
+git merge {RamaCabercaAFusionar} = Ejemplo Dev FIXHOT ETC
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+REMOTE
+
+git remote add {nombreRemoto} {httpClone} = para anexar mi git al un repo de github
+
+git remote -v = para ver todos los remotos
+
+git push {nombreRemoto} {nombreDeLaRama}
+
+Ejemplo : git remote add origin https://github.com/FernandoDranzer21/hyperBlog.git
+		  git push origin main
+
+
+git pull {nombreRemoto} {nombreDeLaRama}
+
+* Puede pasar el escenario que has creado un repo en GITHUB con un archivo README.MD pero al momento de traer los cambios salga un mensaje que no existe merge y es correcto entonces en esos caso usamos este comando
+
+git pull {nombreRemoto} {nombreDeLaRama} --allow-unrelated-histories
